@@ -4,12 +4,18 @@
             <%= form_with url: root_path, method: :get do |f| %>
                 <div class="actions columns">
                     <div class="field column is-4 is-offset-4">
-                        <h4 class="is-size-4">Enter Your Flickr ID To Display Your Photos</h4>
+                        <h5 class="is-size-5 has-text-weight-bold">Enter Your Flickr ID To Display Your Photos</h5>
                         <br />
                         <%= f.text_field :flickr_id, class: 'input mb-5' %>
                         <%= f.submit 'Search For Photos', class: 'button is-medium' %>
                     </div>
                 </div>
+            <% end %>
+            <br />
+            <% if @pictures_list %>
+                <% @pictures_list.each do |picture| %>
+                    <%= image_tag(Flickr.url_q(picture)) %>
+                <% end %>
             <% end %>
         </div>
     </div>
