@@ -11,6 +11,9 @@
   </head>
 
   <body>
+    <% if flash[:alert] %>
+      <p class="alert has-text-centered notification is-warning"><%= alert %></p>
+    <% end %>
     <%= yield %>
   </body>
 </html>
