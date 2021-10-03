@@ -2,7 +2,7 @@ class StaticPagesController < ApplicationController
     require 'flickr'
 
     def index
-        flickr = Flickr.new "38df1bf08bb5c17a7702895b4572e302", "a8e7cdaf7685b20f"
+        flickr = Flickr.new ENV["flickr_api_key"], ENV["flickr_api_secret"]
 
         unless params[:flickr_id].blank?
             begin 

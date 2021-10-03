@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'bulma-rails', '~> 0.9.1'
 gem 'flickr', '~> 2.0', '>= 2.0.2'
+gem "figaro"
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
