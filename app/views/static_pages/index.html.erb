@@ -4,7 +4,7 @@
             <%= form_with url: root_path, method: :get do |f| %>
                 <div class="actions columns">
                     <div class="field column is-4 is-offset-4">
-                        <h5 class="is-size-5 has-text-weight-bold">Enter Your Flickr ID To Display Your Photos</h5>
+                        <h5 class="is-size-5 has-text-weight-bold">Enter Your Flickr ID Or Username To Start</h5>
                         <br />
                         <%= f.text_field :flickr_id, class: 'input mb-5' %>
                         <%= f.submit 'Search For Photos', class: 'button is-medium' %>
@@ -15,7 +15,7 @@
             <% if @pictures_list %>
                 <div id="user" class="mt-4">
                     <div id="user-info">
-                        <h5 class="is-size-5 has-text-weight-semibold">Displaying Profile for: <%= @user.username %></h5>
+                        <h5 class="is-size-5 has-text-weight-semibold">Displaying Photos For: <%= @user.username %></h5>
                         <%= link_to 'Go To Profile', @user.profileurl, class: 'button', target: :_blank %>
                     </div>
                     <div id="user-photos" class="mt-4">
