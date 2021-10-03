@@ -3,7 +3,7 @@
 This site is a toy app to set up use of the Flickr api to load the public photos of a given user. The project description can be found on [The Odin Project](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-on-rails/lessons/flickr-api). 
 
 ## Live Preview
-A live version of this project can be found at [odin-flickr-api.herokuapp.com]](https://odin-flickr-api.herokuapp.com/)
+A live version of this project can be found at [odin-flickr-api.herokuapp.com](https://odin-flickr-api.herokuapp.com/)
 
 ## Functonality
 <img src="img/splash.png" alt="Home Page" width="700" height="300">
