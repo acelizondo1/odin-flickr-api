@@ -8,6 +8,7 @@ class StaticPagesController < ApplicationController
             puts params[:flickr_id]
             begin
                 @pictures_list = flickr.people.getPublicPhotos :user_id => params[:flickr_id]
+                @user = flickr.people.getInfo :user_id => params[:flickr_id]
             rescue => e
                 message = e.message.split("-")
                 flash[:alert] = message[1] + " - Please Try Again"

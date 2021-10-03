@@ -13,9 +13,17 @@
             <% end %>
             <br />
             <% if @pictures_list %>
-                <% @pictures_list.each do |picture| %>
-                    <%= link_to(image_tag(Flickr.url_q(picture)), Flickr.url_b(picture), target: :_blank) %>
-                <% end %>
+                <div id="user" class="mt-4">
+                    <div id="user-info">
+                        <h5 class="is-size-5 has-text-weight-semibold">Displaying Profile for: <%= @user.username %></h5>
+                        <%= link_to 'Go To Profile', @user.profileurl, class: 'button', target: :_blank %>
+                    </div>
+                    <div id="user-photos" class="mt-4">
+                        <% @pictures_list.each do |picture| %>
+                            <%= link_to(image_tag(Flickr.url_q(picture)), Flickr.url_b(picture), target: :_blank) %>
+                        <% end %>
+                    </div>
+                </div>
             <% end %>
         </div>
     </div>
