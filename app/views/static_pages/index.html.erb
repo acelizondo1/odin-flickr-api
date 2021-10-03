@@ -13,7 +13,7 @@
             <% end %>
             <br />
             <% if @pictures_list %>
-                <div id="user" class="mt-4">
+                <div id="user" class="mt-4 box">
                     <div id="user-info">
                         <h5 class="is-size-5 has-text-weight-semibold">Displaying Photos For: <%= @user.username %></h5>
                         <%= link_to 'Go To Profile', @user.profileurl, class: 'button', target: :_blank %>
