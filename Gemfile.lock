@@ -215,7 +215,7 @@ DEPENDENCIES
   flickr (~> 2.0, >= 2.0.2)
   jbuilder (~> 2.7)
   listen (~> 3.3)
-  pg
+  pg (~> 1.1)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4, >= 6.1.4.1)
